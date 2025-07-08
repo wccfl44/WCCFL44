@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('fonts/Avenir-Book.eot');
+    src: url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Avenir-Book.woff') format('woff'),
+    url('fonts/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Avenir';
+}
+
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 32px;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+
+/* Left and right column */
+.column.left {
+  width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+}
+
+.column.right {
+  width: 5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Potential program schedule formatting
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+table.program {
+    border-collapse: collapse;
+    border: 2px solid white;
+    /* border-spacing: 2px; */
+    border-spacing: 0px 0px;
+    font-size: 14px;
+}
+
+table.program td {
+    padding: 5px 10px;
+    margin: 10px;
+    vertical-align: top;
+    border: 2px solid white;
+}
+
+td.time {
+    width: 20%;
+}
+
+
+td.authorsandtitle {
+    width: 80%;
+}
+
+tr.break {
+  background-color: #A7C7E7;
+}
+
+tr.talk {
+  background-color: #C1E1C1;
+}
+
+tr.invited {
+  background-color: #F8C471;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px){
+  .column.left, .column.right, .column.middle{
+    width: 100%;
+  }
+  #logo {
+        max-height: 200px;
+        width: 100%;
+    }
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+
+
