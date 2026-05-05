@@ -67,6 +67,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 table.program {
+    width: 100%;
     border-collapse: collapse;
     border: 2px solid white;
     /* border-spacing: 2px; */
@@ -75,6 +76,7 @@ table.program {
 }
 
 table.program td {
+    ;
     padding: 5px 10px;
     margin: 10px;
     vertical-align: top;
@@ -86,9 +88,12 @@ td.time {
 }
 
 
+
 td.authorsandtitle {
-    width: 80%;
+    width: 40%;
 }
+
+
 
 tr.break {
   background-color: #A7C7E7;
